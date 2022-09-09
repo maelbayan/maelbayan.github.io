@@ -30,8 +30,8 @@
     --warna-teks: #000;
     --warna-kedua: #a09dab;
     --warna-utama: #0ccf3d;
-    --fon-besar: 4rem;
-    --fon-h2: 3rem;
+    --fon-besar: 3rem;
+    --fon-h2: 2rem;
     --fon-p: 1,1rem;
     }
     body{
@@ -59,6 +59,12 @@
     font-size: 20px;
     font-weight: 500;
     }
+    .kop img{
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+
+    }
     </style>
 </head>
 <body>
@@ -67,6 +73,9 @@
             <div class="row">
                 <div class="text-center">
                   <h3>Panitia PPDB MA El-Bayan Tahun 2023/2024</h3>
+                </div>
+                <div class="kop">
+                    <img src="/img/guru.jpeg" alt="">
                 </div>
             </div>
             
@@ -77,7 +86,7 @@
           <h3>Formulir Pendaftaran</h3>
           <!-- <p class="text-center">Formulir ini nantinya akan digunakan sebagai pendaftaran Pondok Pesantren sekaligus Madrasah Diniyah</p> -->
           <h4>Biodata Siswa</h4>
-          <form class="row g-2 needs-validation" name="ppdbmaelbayan" id="ppdbmaelbayan" novalidate>
+          <form class="row g-2 needs-validation" name="ppdbmaelbayan" id="ppdbmaelbayan">
             <div class="col-md-12">
                   <label for="inputNama" class="form-label">Nama Lengkap</label><small class="text-danger">* <i>(kolom wajib diisi)</i></small>
                   <input name="Nama" type="text" class="form-control" id="inputNama" pattern="[A-Z a-z']{3,}" title="Mohon masukkan dengan tepat" required>
@@ -172,7 +181,7 @@
             
             <hr class="my-4">
               <h4>Biodata Orang Tua</h4>
-              <div class="row justify-content-around">
+            <div class="row justify-content-around">
                   
               <div class="col-lg-5 my-2">
               <h5>Ayah</h5>
@@ -321,7 +330,7 @@
                       <input name="Telepon" type="tel" class="form-control" id="inputNomorTelepon" placeholder="08532622XXXX" pattern="[0-9]{10,13}" required title="Mohon masukkan dengan tepat">
                   </div>
               </div>
-
+            </div>
               <hr class="my-4">
               <h4>Data Alamat Rumah</h4>
               <div class="col-md-4">
@@ -347,15 +356,15 @@
                     <input name="Desa" type="text" class="form-control" id="inputDesa" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
                 </div>
               
-              <div class="col-md-4">
+              <div class="col-md-3">
                   <label for="inputKecamatan" class="form-label">Kecamatan</label><small class="text-danger">*</small>
                   <input name="Kecamatan" type="text" class="form-control" id="inputKecamatan" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                   <label for="inputKabupaten" class="form-label">Kabupaten</label><small class="text-danger">*</small>
                   <input name="Kabupaten" type="text" class="form-control" id="inputKabupaten" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                   <label for="inputProvinsi" class="form-label">Provinsi</label><small class="text-danger">*</small>
                   <select name="Provinsi" id="inputProvinsi" class="form-select" required>
                       <option>Bali</option>
@@ -394,6 +403,10 @@
                       <option>Sumatera Utara</option>
                   </select>
               </div>
+              <div class="col-md-3">
+                <label for="inputKodePos" class="form-label">Kode Pos</label><small class="text-danger">*</small>
+                <input name="Kode Pos" type="tel" class="form-control" id="inputKodePos" pattern="[0-9]{3,}" required title="Mohon masukkan dengan tepat">
+              </div>
              
               <hr class="my-4">
               <h4>Data Sekolah</h4>
@@ -403,7 +416,7 @@
                      <option>Agama</option>
                      <option selected>IPA (Ilmu Pengetahuan Alam)</option>
                      <option>IPS (Ilmu Pengetahuan Sosial)</option>
-                     <option>Bahasa Jepang</option>
+                     <option>Bahasa</option>
                  </select>
                  <small><i> Silakan pilih jurusan yang akan anda ambil di MA El-Bayan</i></small>  
              </div>
@@ -414,13 +427,13 @@
                       <option>Agama</option>
                       <option>IPA (Ilmu Pengetahuan Alam)</option>
                       <option>IPS (Ilmu Pengetahuan Sosial)</option>
-                      <option>Bahasa Jepang</option>
+                      <option>Bahasa</option>
                   </select>
                   <small><i>Sebagai ganti ketika anda tidak masuk pada Jurusan Utama yang anda pilih sebelumnya</i> </small>
             </div>
               <div class="col-md-12">
                   <label for="inputNamaSekolahAsal" class="form-label">Nama Sekolah Asal</label><small class="text-danger">*</small>
-                  <input name="Sekolah Asal" type="text" class="form-control" id="inputNamaSekolahAsal" required pattern="[A-Z a-z]{3,}">
+                  <input name="Nama Asal Sekolah" type="text" class="form-control" id="inputNamaSekolahAsal" required pattern="[A-Z a-z]{3,}">
               </div>
               
               <div class="col-md-6">
@@ -432,11 +445,11 @@
                 <label for="inputKecamatan" class="form-label">Kecamatan</label><small class="text-danger">*</small>
                 <input name="Kecamatan AS" type="text" class="form-control" id="inputKecamatan" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
             </div>
-            <div class="col-md-6">
-                <label for="inputKabupaten" class="form-label">Kabupaten</label><small class="text-danger">*</small>
-                <input name="Kabupaten AS" type="text" class="form-control" id="inputKabupaten" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
-            </div>
-            <div class="col-md-6">
+                <div class="col-md-4">
+                    <label for="inputKabupaten" class="form-label">Kabupaten</label><small class="text-danger">*</small>
+                    <input name="Kabupaten AS" type="text" class="form-control" id="inputKabupaten" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                </div>
+            <div class="col-md-4">
                 <label for="inputProvinsi" class="form-label">Provinsi</label><small class="text-danger">*</small>
                 <select name="Provinsi AS" id="inputProvinsi" class="form-select" required>
                     <option>Bali</option>
@@ -474,6 +487,10 @@
                     <option>Sumatera Selatan</option>
                     <option>Sumatera Utara</option>
                 </select>
+            </div>
+            <div class="col-md-4">
+                <label for="inputKodePos" class="form-label">Kode Pos</label><small class="text-danger">*</small>
+                <input name="Kode Pos AS" type="tel" class="form-control" id="inputKodePos" pattern="[0-9]{3,}" required title="Mohon masukkan dengan tepat">
             </div>
 
             <!-- Kurang Telepon Sekolah dan Kode POS -->
@@ -513,7 +530,7 @@
       </div>
       
   <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbw6OMt1_kIBanOWeSbG_ZMl6Wk1NByrbWiD3Od9nP-yf_BoxQi4ZlzfGCyejLCLmis1/exec'
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzdcz0VYWmdXmXbXhJOPX7OLdVzbkpUlmK2j_LWB9Fkq2UYej6SVJlUbNqKxmzDaK6J/exec'
       const form = document.forms['ppdbmaelbayan']
       const btnLoading = document.querySelector('.btn-loading')
       const btnKirim = document.querySelector('.btn-kirim')
