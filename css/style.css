@@ -12,8 +12,8 @@
     --warna-teks: #000;
     --warna-kedua: #a09dab;
     --warna-utama: #0ccf3d;
-    --fon-besar: 4rem;
-    --fon-h2: 3rem;
+    --fon-besar: 3rem;
+    --fon-h2: 2rem;
     --fon-p: 1,1rem;
 }
 body{
@@ -91,12 +91,13 @@ header{
 }
 section{
     padding: 100px 10%;
+    overflow-y: hidden;
 }
 .home{
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url(../img/background.png);
+    background: url(../img/background1.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -104,6 +105,9 @@ section{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 4rem;
+}
+.beranda-teks{
+    padding:1rem;
 }
 .beranda-teks h1{
     margin: 10px 0px 25px;
@@ -529,6 +533,9 @@ header.sticky{
         padding: 20px;
         transition: ease .50s;
         cursor: pointer;
+    }
+    .beranda-teks{
+        margin-top: 2rem;
     }
 }
 
