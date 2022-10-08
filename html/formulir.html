@@ -100,7 +100,7 @@
             </div>
             <div class="col-md-4">
                   <label for="inputTempatLahir" class="form-label">Tempat Lahir</label><small class="text-danger">*</small>
-                  <input name="Tempat" type="text" class="form-control" id="inputTempatLahir" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                  <input name="Tempat" type="text" class="form-control" id="inputTempatLahir" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
             </div>
             <div class="col-md-4">
                 <label for="inputTanggalLahir" class="form-label">Tanggal Lahir</label><small class="text-danger">*</small>
@@ -108,15 +108,15 @@
             </div>
             <div class="col-md-4">
                 <label for="inputAnakKe" class="form-label">Anak Ke</label>
-                <input name="Anak Ke" type="tel" pattern="[0-9]{2}" class="form-control" id="inputAnakKe">
+                <input name="Anak Ke" type="tel" pattern="[0-9]{1,0}" class="form-control" id="inputAnakKe">
             </div>
             <div class="col-md-4">
                 <label for="inputSaudaraKandung" class="form-label">Saudara Kandung</label>
-                <input name="Saudara Kandung" type="tel" pattern="[0-9]{2}" class="form-control" id="inputSaudaraKandung">
+                <input name="Saudara Kandung" type="tel" pattern="[0-9]{1,0}" class="form-control" id="inputSaudaraKandung">
             </div>
             <div class="col-md-4">
                 <label for="inputSaudaraTiri" class="form-label">Saudara Tiri</label>
-                <input name="Saudara Tiri" type="tel" pattern="[0-9]{2}" class="form-control" id="inputSaudaraTiri">
+                <input name="Saudara Tiri" type="tel" pattern="[0-9 -]{1,0}" class="form-control" id="inputSaudaraTiri">
             </div>
             <div class="col-md-6">
                 <label for="inputNomorKK" class="form-label">Nomor KK</label><small class="text-danger">*</small>
@@ -167,11 +167,11 @@
             </div>
             <div class="col-md-3">
                 <label for="inputTinggiBadan" class="form-label">Tinggi Badan (cm)</label>
-                <input name="Tinggi Badan" type="tel" pattern="[0-9]{3}" class="form-control" id="inputTinggiBadan">
+                <input name="Tinggi Badan" type="tel" pattern="[0-9]{1,}" class="form-control" id="inputTinggiBadan">
             </div>
             <div class="col-md-3">
                 <label for="inputBeratBadan" class="form-label">Berat Badan (kg)</label>
-                <input name="Berat Badan" type="tel" pattern="[0-9]{3}" class="form-control" id="inputBeratBadan">
+                <input name="Berat Badan" type="tel" pattern="[0-9]{1,}" class="form-control" id="inputBeratBadan">
             </div>
             <div class="col-md-6">
                 <label for="inputRiwayat Penyakit" class="form-label">Riwayat Penyakit</label>
@@ -196,7 +196,7 @@
                       </div>
                       <div class="col-md-6">
                         <label for="inputTempatLahir" class="form-label">Tempat Lahir</label><small class="text-danger">*</small>
-                        <input name="Tempat Lahir Ayah" type="text" class="form-control" id="inputTempatLahir" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                        <input name="Tempat Lahir Ayah" type="text" class="form-control" id="inputTempatLahir" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
                     </div>
                     <div class="col-md-6">
                         <label for="inputTanggalLahir" class="form-label">Tanggal Lahir</label><small class="text-danger">*</small>
@@ -265,7 +265,7 @@
                       </div>
                       <div class="col-md-6">
                         <label for="inputTempatLahir" class="form-label">Tempat Lahir</label><small class="text-danger">*</small>
-                        <input name="Tempat Lahir Ibu" type="text" class="form-control" id="inputTempatLahir" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                        <input name="Tempat Lahir Ibu" type="text" class="form-control" id="inputTempatLahir" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
                     </div>
                     <div class="col-md-6">
                         <label for="inputTanggalLahir" class="form-label">Tanggal Lahir</label><small class="text-danger">*</small>
@@ -335,7 +335,7 @@
               <h4>Data Alamat Rumah</h4>
               <div class="col-md-4">
                   <label for="inputJalan" class="form-label">Jalan</label>
-                  <input name="Jalan" type="text" class="form-control" id="inputDusun"pattern="[A-Z a-z]{3,}">
+                  <input name="Jalan" type="text" class="form-control" id="inputDusun"pattern="[A-Z a-z 0-9'.,/-]{3,}">
               </div>
               
               <div class="col-4">
@@ -353,16 +353,16 @@
                 </div>
                 <div class="col-md-4">
                     <label for="inputDesa" class="form-label">Desa</label><small class="text-danger">*</small>
-                    <input name="Desa" type="text" class="form-control" id="inputDesa" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                    <input name="Desa" type="text" class="form-control" id="inputDesa" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
                 </div>
               
               <div class="col-md-3">
                   <label for="inputKecamatan" class="form-label">Kecamatan</label><small class="text-danger">*</small>
-                  <input name="Kecamatan" type="text" class="form-control" id="inputKecamatan" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                  <input name="Kecamatan" type="text" class="form-control" id="inputKecamatan" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
               </div>
               <div class="col-md-3">
                   <label for="inputKabupaten" class="form-label">Kabupaten</label><small class="text-danger">*</small>
-                  <input name="Kabupaten" type="text" class="form-control" id="inputKabupaten" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                  <input name="Kabupaten" type="text" class="form-control" id="inputKabupaten" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
               </div>
               <div class="col-md-3">
                   <label for="inputProvinsi" class="form-label">Provinsi</label><small class="text-danger">*</small>
@@ -433,21 +433,21 @@
             </div>
               <div class="col-md-12">
                   <label for="inputNamaSekolahAsal" class="form-label">Nama Sekolah Asal</label><small class="text-danger">*</small>
-                  <input name="Nama Asal Sekolah" type="text" class="form-control" id="inputNamaSekolahAsal" required pattern="[A-Z a-z]{3,}">
+                  <input name="Nama Asal Sekolah" type="text" class="form-control" id="inputNamaSekolahAsal" required pattern="[A-Z a-z 0-9']{3,}">
               </div>
               
               <div class="col-md-6">
                 <label for="inputJalanAS" class="form-label">Alamat Sekolah Asal</label>
-                <input name="Jalan AS" type="text" class="form-control" id="inputJalanAS" pattern="[A-Z a-z]{3,}" placeholder="Jalan Hajantara Nomor 1">
+                <input name="Jalan AS" type="text" class="form-control" id="inputJalanAS" pattern="[A-Z a-z 0-9' ,/.-]{3,}" placeholder="Jalan Hajantara Nomor 1">
             </div>
     
             <div class="col-md-6">
                 <label for="inputKecamatan" class="form-label">Kecamatan</label><small class="text-danger">*</small>
-                <input name="Kecamatan AS" type="text" class="form-control" id="inputKecamatan" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                <input name="Kecamatan AS" type="text" class="form-control" id="inputKecamatan" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
             </div>
                 <div class="col-md-4">
                     <label for="inputKabupaten" class="form-label">Kabupaten</label><small class="text-danger">*</small>
-                    <input name="Kabupaten AS" type="text" class="form-control" id="inputKabupaten" pattern="[A-Z a-z]{3,}" required title="Mohon masukkan dengan tepat">
+                    <input name="Kabupaten AS" type="text" class="form-control" id="inputKabupaten" pattern="[A-Z a-z 0-9']{3,}" required title="Mohon masukkan dengan tepat">
                 </div>
             <div class="col-md-4">
                 <label for="inputProvinsi" class="form-label">Provinsi</label><small class="text-danger">*</small>
