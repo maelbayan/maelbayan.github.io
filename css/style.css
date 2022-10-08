@@ -222,6 +222,7 @@ header.sticky{
     grid-gap: 2rem;
 }
 .gambar-sejarah img{
+    padding: 10%;
     max-width: 100%;
     width: 540px;
     height: auto;
